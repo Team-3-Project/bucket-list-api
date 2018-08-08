@@ -13,7 +13,10 @@ const requireToken = passport.authenticate('bearer', { session: false })
 const router = express.Router()
 
 router.get('/bl-items/:id', (req, res) => {
-
+  blItem.findById(req.params.id)
+  .then(handle404)
+  .then(blItem => res.status(200).json({ blItem: blItem.toObject() }))
+  .catch(err => handle(err, res))
 })
 
 router.get('/bl-items', (req, res) => {
