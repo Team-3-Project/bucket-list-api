@@ -54,5 +54,15 @@ router.patch('/bl-items/:id', requireToken, (req, res) => {
     .catch(err => handle(err, res))
 })
 
+router.post('/bl-items', requireToken, (req, res) => {
+  req.body.item.owner = req.user.id
+
+  blItem.create(req.body.item)
+    .then(item => {
+      res.status(201).json({ item: item.toObject() })
+    })
+
+    .catch(err => handle(err, res))
+})
 
 module.exports = router
