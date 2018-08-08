@@ -4,7 +4,7 @@ const passport = require('passport')
 const handle = require('../../lib/error_handler')
 const customErrors = require('../../lib/custom_errors')
 
-const blItem = require('../models/blItem')
+const BlItem = require('../models/blItem')
 
 const handle404 = customErrors.handle404
 const requireOwnership = customErrors.requireOwnership
@@ -13,28 +13,23 @@ const requireToken = passport.authenticate('bearer', { session: false })
 const router = express.Router()
 
 router.get('/bl-items/:id', (req, res) => {
-  blItem.findById(req.params.id)
+  BlItem.findById(req.params.id)
   .then(handle404)
-  .then(blItem => res.status(200).json({ blItem: blItem.toObject() }))
+  .then(item => res.status(200).json({ blItem: item.toObject() }))
   .catch(err => handle(err, res))
 })
 
 router.get('/bl-items', (req, res) => {
-  blItem.find()
+  BlItem.find()
     .then(blItems => {
-      // `examples` will be an array of Mongoose documents
-      // we want to convert each one to a POJO, so we use `.map` to
-      // apply `.toObject` to each one
       return blItems.map(blItem => blItem.toObject())
     })
-    // respond with status 200 and JSON of the examples
     .then(blItems => res.status(200).json({ blItems: blItems }))
-    // if an error occurs, pass it to the handler
     .catch(err => handle(err, res))
 })
 
 router.delete('/bl-items/:id', requireToken, (req, res) => {
-  blItem.findById(req.params.id)
+  BlItem.findById(req.params.id)
     .then(handle404)
     .then(item => {
       requireOwnership(req, item)
@@ -46,7 +41,7 @@ router.delete('/bl-items/:id', requireToken, (req, res) => {
 
 router.patch('/bl-items/:id', requireToken, (req, res) => {
   delete req.body.item.owner
-  blItem.findById(req.params.id)
+  BlItem.findById(req.params.id)
     .then(handle404)
     .then(item => {
       requireOwnership(req, item)
@@ -60,7 +55,7 @@ router.patch('/bl-items/:id', requireToken, (req, res) => {
 router.post('/bl-items', requireToken, (req, res) => {
   req.body.item.owner = req.user.id
 
-  blItem.create(req.body.item)
+  BlItem.create(req.body.item)
     .then(item => {
       res.status(201).json({ item: item.toObject() })
     })
