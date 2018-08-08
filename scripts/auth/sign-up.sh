@@ -16,3 +16,17 @@ curl "${API}${URL_PATH}" \
   }'
 
 echo
+
+curl "http://localhost:4741/sign-up" \
+  --include \
+  --request POST \
+  --header "Content-Type: application/json" \
+  --data '{
+    "credentials": {
+      "email": "'"alex"'",
+      "password": "'"al"'",
+      "password_confirmation": "'"al"'"
+    }
+  }'
+
+echo
