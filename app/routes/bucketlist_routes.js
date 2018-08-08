@@ -21,7 +21,14 @@ router.get('/bl-items/:id', (req, res) => {
 })
 
 router.delete('/bl-items/:id', requireToken, (req, res) => {
-
+  blItem.findById(req.params.id)
+    .then(handle404)
+    .then(item => {
+      requireOwnership(req, item)
+      item.remove()
+    })
+    .then(() => res.sendStatus(204))
+    .catch(err => handle(err, res))
 })
 
 router.patch('/bl-items/:id', requireToken, (req, res) => {
@@ -36,5 +43,6 @@ router.patch('/bl-items/:id', requireToken, (req, res) => {
     .then(() => res.sendStatus(204))
     .catch(err => handle(err, res))
 })
+
 
 module.exports = router
