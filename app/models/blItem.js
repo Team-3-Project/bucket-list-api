@@ -23,10 +23,10 @@ const blItemSchema = new mongoose.Schema({
     required: true
   },
   isPrivate: {
-    Boolean: true
+    type: Boolean
   },
   isComplete:{
-    Boolean: true
+    type: Boolean
   }
 }, {
   timestamps: true
