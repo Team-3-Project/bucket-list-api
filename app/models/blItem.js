@@ -14,9 +14,12 @@ const blItemSchema = new mongoose.Schema({
     max: 255
   },
   location: {
+    type: String,
+    required: true
     name: {
       type: String
     }
+
   },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
@@ -33,4 +36,6 @@ const blItemSchema = new mongoose.Schema({
   timestamps: true
 })
 
+
 module.exports = mongoose.model('BlItem', blItemSchema)
+
