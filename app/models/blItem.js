@@ -15,7 +15,8 @@ const blItemSchema = new mongoose.Schema({
   },
   location: {
     name: {
-      type: String
+      type: String,
+      required: true
     }
   },
   owner: {

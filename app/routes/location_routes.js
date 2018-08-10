@@ -16,7 +16,7 @@ const router = express.Router()
 
 // INDEX
 // GET /locations
-router.get('/locations', requireToken, (req, res) => {
+router.get('/locations', (req, res) => {
   location.find()
     .then(locations => {
       // `locations` will be an array of Mongoose documents

@@ -1,8 +1,8 @@
-// const mongoose = require('mongoose')
-const Schema = require('mongoose').Schema
-const model = require('mongoose').model
+const mongoose = require('mongoose')
+// const Schema = require('mongoose').Schema
+// const model = require('mongoose').model
 
-const locationSchema = new Schema({
+const locationSchema = new mongoose.Schema({
   location: {
     type: String,
     required: true,
@@ -13,14 +13,9 @@ const locationSchema = new Schema({
     type: String,
     required: true,
     max: 5000
-  },
-  owner: {
-    type: Schema.types.ObjectId,
-    ref: 'User',
-    required: true
   }
 }, {
   timestamps: true
 })
 
-module.exports = model('Location', locationSchema)
+module.exports = mongoose.model('Location', locationSchema)
