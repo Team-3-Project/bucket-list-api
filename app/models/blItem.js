@@ -14,10 +14,8 @@ const blItemSchema = new mongoose.Schema({
     max: 255
   },
   location: {
-    name: {
-      type: String,
-      required: true
-    }
+    type: String,
+    required: true
   },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
