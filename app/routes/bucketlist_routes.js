@@ -19,7 +19,7 @@ router.get('/bl-items/:id', (req, res) => {
   .catch(err => handle(err, res))
 })
 
-router.get('/bl-items', (req, res) => {
+router.get('/bl-items', requireToken, (req, res) => {
   BlItem.find()
     .then(blItems => {
       return blItems.map(blItem => blItem.toObject())
@@ -41,6 +41,9 @@ router.delete('/bl-items/:id', requireToken, (req, res) => {
 
 router.patch('/bl-items/:id', requireToken, (req, res) => {
   delete req.body.item.owner
+  console.log('==========================')
+  console.log(req.body)
+  console.log('==========================')
   BlItem.findById(req.params.id)
     .then(handle404)
     .then(item => {
