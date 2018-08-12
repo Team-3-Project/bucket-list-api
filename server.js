@@ -7,6 +7,7 @@ const cors = require('cors')
 // require route files
 const exampleRoutes = require('./app/routes/example_routes')
 const userRoutes = require('./app/routes/user_routes')
+const bucketListRoutes = require('./app/routes/bucketlist_routes')
 
 // require database configuration logic
 // `db` will be the actual Mongo URI as a string
@@ -43,7 +44,7 @@ const app = express()
 app.use(cors({ origin: process.env.CLIENT_ORIGIN || 'http://localhost:7165' }))
 
 // define port for API to run on
-const port = process.env.PORT || 4741
+const port = /*process.env.PORT || */4741
 
 // this middleware makes it so the client can use the Rails convention
 // of `Authorization: Token token=<token>` OR the Express convention of
@@ -71,6 +72,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // register route files
 app.use(exampleRoutes)
 app.use(userRoutes)
+app.use(bucketListRoutes)
 
 // run API on designated port (4741 in this case)
 app.listen(port, () => {
