@@ -19,7 +19,7 @@ router.get('/bl-items/:id', (req, res) => {
   .catch(err => handle(err, res))
 })
 
-router.get('/bl-items', (req, res) => {
+router.get('/bl-items', requireToken, (req, res) => {
   BlItem.find()
     .then(blItems => {
       return blItems.map(blItem => blItem.toObject())
@@ -53,8 +53,6 @@ router.patch('/bl-items/:id', requireToken, (req, res) => {
 })
 
 router.post('/bl-items', requireToken, (req, res) => {
-  console.log(req.body.item)
-  console.log(`req.user.id = ${req.user.id}`)
   req.body.item.owner = req.user.id
 
   BlItem.create(req.body.item)
