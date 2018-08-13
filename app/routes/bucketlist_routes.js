@@ -41,9 +41,6 @@ router.delete('/bl-items/:id', requireToken, (req, res) => {
 
 router.patch('/bl-items/:id', requireToken, (req, res) => {
   delete req.body.item.owner
-  console.log('==========================')
-  console.log(req.body)
-  console.log('==========================')
   BlItem.findById(req.params.id)
     .then(handle404)
     .then(item => {
