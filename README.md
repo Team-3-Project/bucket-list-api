@@ -6,6 +6,12 @@ The entire team contributed to the read me documentation by communicating techno
 #Link to wiki - contains ERD and Wireframe and workflow
 <https://github.com/Team-3-Project/bucket-list-api.wiki.git>
 
+#Link to Front End rep
+https://github.com/Team-3-Project/bucket-list-app
+
+#Link to Front End Deployed Site
+
+
 #My user stories for this project were:
 
 As a user I can sign up, sign in,I can change password and sign out of the app.
@@ -44,7 +50,8 @@ Terry created wireframe doc,created ERD doc, Terry took resposibility for mergin
 Kimber worked on Read.me,User stories as well as adding front end api. Created button for bucketlist in HTML.Added the crud api code from River with a few updates to fit our project needs such as updating method GET and get item by id. Added html code for changing password with current and new password.Assisted with routes controller and connecting to front end .
 
 We all have commits in both repos- We also each contributed to the blocks of code for route controllers in API.
-
+#Unsolved problems to be fixed in future iterations
+Find a way to only get signed in users bucket list item
 #Challenges
 
 We had a few challenges with merge conflicts.
@@ -59,6 +66,3 @@ We communicated throughout the day.
 We sat in the same space together and worked indepedantly but as a group also.
 We pushed after each feature or piece of code we were responsible for.
 We mostly pulled at the same time from our develpment branch so we could make sure to stay on the same page.
-
-
-#Link to Back End
