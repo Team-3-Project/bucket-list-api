@@ -65,4 +65,11 @@ We had a stand up at the beginning of each day.
 We communicated throughout the day.
 We sat in the same space together and worked indepedantly but as a group also.
 We pushed after each feature or piece of code we were responsible for.
+<<<<<<< a92682c9fe4084d49c18d34178694282c5906df0
 We mostly pulled at the same time from our develpment branch so we could make sure to stay on the same page.
+=======
+We mostly pulled at the same time from our develpment branch so we could make sure to stay on the same page.
+
+
+#Link to Back End
+>>>>>>> fixed merge conflicts
