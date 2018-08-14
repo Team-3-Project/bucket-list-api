@@ -51,9 +51,9 @@ Terry created wireframe doc,created ERD doc, Terry took resposibility for mergin
 Kimber worked on Read.me,User stories as well as adding front end api. Created button for bucketlist in HTML.Added the crud api code from River with a few updates to fit our project needs such as updating method GET and get item by id. Added html code for changing password with current and new password.Assisted with routes controller and connecting to front end .
 
 We all have commits in both repos- We also each contributed to the blocks of code for route controllers in API.
-#Unsolved problems to be fixed in future iterations
+# Unsolved problems to be fixed in future iterations
 Find a way to only get signed in users bucket list item
-#Challenges
+# Challenges
 
 We had a few challenges with merge conflicts.
 A few minor oops on pushing to the master branch, but was resolved.
@@ -61,16 +61,10 @@ We all had our own visions on how dynamic the project was going to be.
 We had to regroup a few times to see the project to completion.
 
 
-#Things we did right
+# Things we did right
 We had a stand up at the beginning of each day.
 We communicated throughout the day.
 We sat in the same space together and worked indepedantly but as a group also.
 We pushed after each feature or piece of code we were responsible for.
-<<<<<<< a92682c9fe4084d49c18d34178694282c5906df0
-We mostly pulled at the same time from our develpment branch so we could make sure to stay on the same page.
-=======
 We mostly pulled at the same time from our develpment branch so we could make sure to stay on the same page.
 
-
-#Link to Back End
->>>>>>> fixed merge conflicts
