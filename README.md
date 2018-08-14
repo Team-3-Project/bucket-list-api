@@ -3,22 +3,23 @@ Overview
 This is a group project assignment that was given by General Assembly. Our assignment included creating a website that pertains to bucketlists. We initally thought it would be best to mostly base it on one to many relationships. We needed to create a Single Page Application for the web that would allow a user to to interact with the website and the back end was used to authenticate the functions off CRUD.
 The entire team contributed to the read me documentation by communicating technologies used and updates to API.
 
-#Link to wiki - contains ERD and Wireframe and workflow
+# Link to wiki - contains ERD and Wireframe and workflow
 <https://github.com/Team-3-Project/bucket-list-api.wiki.git>
 
-#Link to Front End rep
+# Link to Front End
+https://team-3-project.github.io/bucket-list-app/
 https://github.com/Team-3-Project/bucket-list-app
+# Links to Back End
+https://boiling-harbor-16682.herokuapp.com/
+https://github.com/Team-3-Project/bucket-list-api
 
-#Link to Front End Deployed Site
-
-
-#My user stories for this project were:
+# My user stories for this project were:
 
 As a user I can sign up, sign in,I can change password and sign out of the app.
 Once signed in, I can create a bucket list, search for bucket list items, delete a bucket list item and update a bucketlist item.
 I can see if I was successful or not.
 
-#Project Requirements are:
+# Project Requirements are:
 Our app has been deployed on Github pages.
 Many cohesive commits dating back to the first day of building our project.
 This read.me was created to document the process and technologies used
