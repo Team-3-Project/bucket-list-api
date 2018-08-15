@@ -41,9 +41,9 @@ We wanted t get a connection to the Google Maps API for our locations.
 # Routes, CRUD actions
 Authorized routes
 * GET : router.get('/bl-items') - https://boiling-harbor-16682.herokuapp.com/bl-items
-* GET by ID: router.get('/bl-items/:id' ) - https://boiling-harbor-16682.herokuapp.com/bl-items
-* DELETE : router.delete('/bl-items/:id') - https://boiling-harbor-16682.herokuapp.com/bl-items
-* UPDATE : router.patch('/bl-items/:id') - https://boiling-harbor-16682.herokuapp.com/bl-items
+* GET by ID: router.get('/bl-items/:id' ) - https://boiling-harbor-16682.herokuapp.com/bl-items/:id
+* DELETE : router.delete('/bl-items/:id') - https://boiling-harbor-16682.herokuapp.com/bl-items/:id
+* UPDATE : router.patch('/bl-items/:id') - https://boiling-harbor-16682.herokuapp.com/bl-items/:id
 * CREATE router.post('/bl-items') - https://boiling-harbor-16682.herokuapp.com/bl-items
 
 # Team participation:
