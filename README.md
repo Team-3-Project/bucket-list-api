@@ -4,11 +4,11 @@ This is a group project assignment that was given by General Assembly. Our assig
 The entire team contributed to the read me documentation by communicating technologies used and updates to API.
 
 # Link to wiki - contains ERD and Wireframe and workflow
-<https://github.com/Team-3-Project/bucket-list-api.wiki.git>
+<https://github.com/Team-3-Project/bucket-list-api/wiki>
 
 # Link to Front End
-https://team-3-project.github.io/bucket-list-app/
-https://github.com/Team-3-Project/bucket-list-app
+* https://team-3-project.github.io/bucket-list-app/
+* https://github.com/Team-3-Project/bucket-list-app
 # Links to Back End
 https://boiling-harbor-16682.herokuapp.com/
 https://github.com/Team-3-Project/bucket-list-api
