@@ -10,8 +10,8 @@ The entire team contributed to the read me documentation by communicating techno
 * https://team-3-project.github.io/bucket-list-app/
 * https://github.com/Team-3-Project/bucket-list-app
 # Links to Back End
-https://boiling-harbor-16682.herokuapp.com/
-https://github.com/Team-3-Project/bucket-list-api
+* https://boiling-harbor-16682.herokuapp.com/
+* https://github.com/Team-3-Project/bucket-list-api
 
 # My user stories for this project were:
 
@@ -26,19 +26,27 @@ This read.me was created to document the process and technologies used
 Query was used for DOM manipulation and AJAX for interacting with the API
 
 Technologies Used:
-Mongoose ALL
-Mongo ALL
-Handlebars-Alex
-Postman-Terry
-Express-ALL
-AJAX calls and jQuery are used to interact with the DOM and update the view
-Features/Additions
-Styling min
-Wireframe
+* Mongoose ALL
+* Mongo ALL
+* Handlebars-Alex
+* Postman-Terry
+* Express-ALL
+* AJAX calls and jQuery are used to interact with the DOM and update the view
+* Features/Additions
 
-Stretch goals:To connect to maps.
+# Stretch Goals not met
+We wanted t get a connection to the Google Maps API for our locations.
 
-Team participation:
+
+# Routes, CRUD actions
+Authorized routes
+* GET : router.get('/bl-items') - https://boiling-harbor-16682.herokuapp.com/bl-items
+* GET by ID: router.get('/bl-items/:id' ) - https://boiling-harbor-16682.herokuapp.com/bl-items
+* DELETE : router.delete('/bl-items/:id') - https://boiling-harbor-16682.herokuapp.com/bl-items
+* UPDATE : router.patch('/bl-items/:id') - https://boiling-harbor-16682.herokuapp.com/bl-items
+* CREATE router.post('/bl-items') - https://boiling-harbor-16682.herokuapp.com/bl-items
+
+# Team participation:
 As a team we decided to start with meeting project requirements.
 Together we joined in on discussing how our project would be created. We started by Terry whiteboarding. He made an ERD and wireframe.
 
@@ -51,8 +59,10 @@ Terry created wireframe doc,created ERD doc, Terry took resposibility for mergin
 Kimber worked on Read.me,User stories as well as adding front end api. Created button for bucketlist in HTML.Added the crud api code from River with a few updates to fit our project needs such as updating method GET and get item by id. Added html code for changing password with current and new password.Assisted with routes controller and connecting to front end .
 
 We all have commits in both repos- We also each contributed to the blocks of code for route controllers in API.
+
 # Unsolved problems to be fixed in future iterations
 Find a way to only get signed in users bucket list item
+
 # Challenges
 
 We had a few challenges with merge conflicts.
