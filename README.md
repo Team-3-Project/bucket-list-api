@@ -7,17 +7,24 @@ The entire team contributed to the read me documentation by communicating techno
 <https://github.com/Team-3-Project/bucket-list-api/wiki>
 
 # Link to Front End
-* https://team-3-project.github.io/bucket-list-app/
-* https://github.com/Team-3-Project/bucket-list-app
+* Deployed App : https://team-3-project.github.io/bucket-list-app/
+* Repository : https://github.com/Team-3-Project/bucket-list-app
 # Links to Back End
-* https://boiling-harbor-16682.herokuapp.com/
-* https://github.com/Team-3-Project/bucket-list-api
+* Deployed Back End : https://boiling-harbor-16682.herokuapp.com/
+*  Respository : https://github.com/Team-3-Project/bucket-list-api
 
 # My user stories for this project were:
 
-As a user I can sign up, sign in,I can change password and sign out of the app.
-Once signed in, I can create a bucket list, search for bucket list items, delete a bucket list item and update a bucketlist item.
-I can see if I was successful or not.
+As a user I can 
+* sign up 
+* sign in
+* change password and sign out of the app.
+Once signed in, I can: 
+* create a bucket list item 
+* search for bucket list items  
+* delete a bucket list item 
+* update a bucketlist item.
+There are visual cues and/or messages if a task was successful or not.
 
 # Project Requirements are:
 Our app has been deployed on Github pages.
